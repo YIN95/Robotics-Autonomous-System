@@ -10,7 +10,7 @@ int main(int argc, char **argv){
 
     ras_lab1_msgs::PWM pwm_msg;
 
-    pwm_msg.PWM1 = -255;
+    pwm_msg.PWM1 = 255;
     pwm_msg.PWM2 = 255;
 
     while (ros::ok()){
