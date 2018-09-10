@@ -17,11 +17,15 @@ Coding a closed-loop motor controller using encoder feedback.
 The DC motors simulated in this lab have 360 ticks per revolution (1 revolution = 360 degrees of rotation = 2*pi radians of rotation).   
 Each control cycle is 100 ms long (10 Hz control). 
 
-**For this assignment, implement a P-controller for each of the motors, also a PI-controller should work much better*
+**For this assignment, implement a P-controller for each of the motors, also a PI-controller should work much better**
+
+Also, create a straight line cartesian controller which sends a twist with constant linear velocity and zerp angular velocity to the motor controller.   
+
+
 
 ### Task3: writing a cartesian controller 
 Coding a cartesian controller for a circle trajectory.    
 
 
 ### Task4: writing a wall following controller  
-Coding a wall-following controller using also measurements from the distance sensors.  
+Coding a wall-following controller using also measurements from the distance sensors.   
