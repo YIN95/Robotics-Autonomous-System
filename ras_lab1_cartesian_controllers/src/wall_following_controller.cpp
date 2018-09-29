@@ -27,7 +27,7 @@ int main(int argc, char **argv){
     geometry_msgs::Twist msg_Twist;
 
     msg_Twist.linear.x = v;
-    msg_Twist.linear.y = 0;
+    msg_Twist.linear.y = 0; 
     msg_Twist.linear.z = 0;
     msg_Twist.angular.x = 0;
     msg_Twist.angular.y = 0;
@@ -46,7 +46,7 @@ int main(int argc, char **argv){
 void adcCallback(const ras_lab1_msgs::ADConverter::ConstPtr& msg){
     dis_sensor1 = msg->ch1;
     dis_sensor2 = msg->ch2;
-    ROS_INFO("d1: [%d], d2: [%d]", dis_sensor1, dis_sensor2);
+    ROS_INFO("d1: [%f], d2: [%f]", dis_sensor1, dis_sensor2);
 }
 
 void set_w(geometry_msgs::Twist& msg){
